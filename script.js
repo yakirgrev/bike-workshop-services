@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const checkboxes = document.querySelectorAll(".checkbox");
     const outputText = document.getElementById("outputText");
     const outputSku = document.getElementById("outputSku");
+    const userNameInput = document.getElementById("userName");
     const clearAllButton = document.getElementById("clearAllButton");
 
     function updateOutput() {
@@ -15,22 +16,35 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
 
-        // Update output boxes with selected messages and SKUs
-        outputText.textContent = messages.length > 0 ? messages.join(" | ") : "לא נבחרו שירותים";
-        outputSku.textContent = skuCodes.length > 0 ? skuCodes.join(" | ") : "לא נבחרו קודים";
+        let userName = userNameInput.value.trim();
+        let timestamp = new Date().toLocaleString("he-IL"); // Hebrew date & time format
+
+        if (messages.length > 0) {
+            let namePart = userName ? `👤 שם המכונאי: ${userName} | ` : "";
+            let timestampPart = `⏳ ${timestamp} | `;
+            
+            outputText.textContent = `📢 שירותים: ${messages.join(", ")}`;
+            outputSku.textContent = `${namePart}${timestampPart}🔢 מק"טים: ${skuCodes.join(", ")}`;
+        } else {
+            outputText.textContent = "לא נבחרו שירותים";
+            outputSku.textContent = "לא נבחרו קודים";
+        }
     }
 
-    // Attach event listeners to all checkboxes
+    // Attach event listeners to all checkboxes and the name input
     checkboxes.forEach(checkbox => {
         checkbox.addEventListener("change", updateOutput);
     });
 
-    // Clear All Function
+    userNameInput.addEventListener("input", updateOutput);
+
+    // Clear All Button
     clearAllButton.addEventListener("click", function() {
         checkboxes.forEach(checkbox => {
             checkbox.checked = false;
         });
-        updateOutput();
+        outputText.textContent = "לא נבחרו שירותים";
+        outputSku.textContent = "לא נבחרו קודים";
     });
 
     // Copy Text Function
@@ -43,5 +57,5 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     };
 
-    updateOutput(); // Ensure it starts with a default message
+    updateOutput(); // Ensure initial state is displayed
 });
