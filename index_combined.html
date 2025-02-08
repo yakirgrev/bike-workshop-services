@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>רשימת שירותים עם קודי SKU</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>בחרו שירותים</h2>
+
+        <!-- Services Grid -->
+        <div class="grid-container">
+           <div class="category-box">
+    
+	<h3 class="category-title"><img src="icons/wheels.png" alt="גלגלים ומיסבים"> גלגלים וצמיגים</h3>
+    <h3 class="subcategory-title">בניית גלגלים</h3>
+    <label><input type="checkbox" class="checkbox" data-text="בניית גלגל קדמי" data-sku="408"> בניית גלגל קדמי</label>
+    <label><input type="checkbox" class="checkbox" data-text="בניית גלגל אחורי" data-sku="409"> בניית גלגל אחורי</label>
+	<h3 class="subcategory-title">חישורים</h3>
+    <label><input type="checkbox" class="checkbox" data-text="יישור גלגלים - תיקון קל" data-sku="400"> יישור גלגלים - תיקון קל</label>
+    <label><input type="checkbox" class="checkbox" data-text="יישור גלגלים - תיקון בינוני" data-sku="401"> יישור גלגלים - תיקון בינוני</label>
+    <label><input type="checkbox" class="checkbox" data-text="יישור גלגלים - תיקון קשה" data-sku="402"> יישור גלגלים - תיקון קשה</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת חישור" data-sku="403"> החלפת חישור</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת ניפל" data-sku="404"> החלפת ניפל</label>
+	<h3 class="subcategory-title">נאבה</h3>
+    <label><input type="checkbox" class="checkbox" data-text="שיפוץ מיסבי נאבה קדמית" data-sku="405"> שיפוץ מיסבי נאבה קדמית</label>
+    <label><input type="checkbox" class="checkbox" data-text="שיפוץ מיסבי נאבה אחורית" data-sku="406"> שיפוץ מיסבי נאבה אחורית</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת לב נאבה (Freehub)" data-sku="407"> החלפת לב נאבה (Freehub)</label>
+	<h3 class="subcategory-title">צמיגים וטיובלס</h3>
+    <label><input type="checkbox" class="checkbox" data-text="התקנת/החלפת פנימית" data-sku="450"> התקנת/החלפת פנימית</label>
+    <label><input type="checkbox" class="checkbox" data-text="התקנת/החלפת צמיג" data-sku="451"> התקנת/החלפת צמיג</label>
+    <label><input type="checkbox" class="checkbox" data-text="התקנת מערכת טיובלס" data-sku="452"> התקנת מערכת טיובלס</label>
+    <label><input type="checkbox" class="checkbox" data-text="תיקון צמיג טיובלס" data-sku="453"> תיקון צמיג טיובלס</label>
+</div>
+
+<div class="category-box">
+    <h2 class="category-title"><img src="icons/braking.png" alt="מערכת הבלמים">מערכת הבלמים</h2>
+    <h3 class="subcategory-title">הידראוליקה</h3>
+    <label><input type="checkbox" class="checkbox" data-text="בלידינג קדמי" data-sku="356"> בלידינג קדמי</label>
+    <label><input type="checkbox" class="checkbox" data-text="בלידינג אחורי" data-sku="357"> בלידינג אחורי</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת צינור שמן קדמי" data-sku="358"> החלפת צינור שמן קדמי</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת צינור שמן אחורי" data-sku="359"> החלפת צינור שמן אחורי</label>
+    <label><input type="checkbox" class="checkbox" data-text="קיצור צינור שמן" data-sku="360"> קיצור צינור שמן</label>
+	<h3 class="subcategory-title">ידיות</h3>
+    <label><input type="checkbox" class="checkbox" data-text="שיפוץ ותחזוקת ידיות בלם" data-sku="365"> שיפוץ ותחזוקת ידיות בלם</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת ידית ברקס קדמי" data-sku="366"> החלפת ידית ברקס קדמי</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת ידית ברקס אחורי" data-sku="367"> החלפת ידית ברקס אחורי</label>
+	<h3 class="subcategory-title">כבלים</h3>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת כבל בלם וחיפוי חיצוני (חישוק)" data-sku="368"> החלפת כבל בלם וחיפוי חיצוני (חישוק)</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת כבלי בלם פנימי (חישוק)" data-sku="369"> החלפת כבלי בלם פנימי (חישוק)</label>
+	<h3 class="subcategory-title">קליפרים</h3>
+    <label><input type="checkbox" class="checkbox" data-text="כיוון קליפר קדמי" data-sku="350"> כיוון קליפר קדמי</label>
+    <label><input type="checkbox" class="checkbox" data-text="כיוון קליפר אחורי" data-sku="351"> כיוון קליפר אחורי</label>
+    <label><input type="checkbox" class="checkbox" data-text="כיוון קליפרים של בלמי חישוק" data-sku="352"> כיוון קליפרים של בלמי חישוק</label>
+	<h3 class="subcategory-title">רוטורים</h3>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת דיסק (רוטור) קדמי" data-sku="361"> החלפת דיסק (רוטור) קדמי</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת דיסק (רוטור) אחורי" data-sku="362"> החלפת דיסק (רוטור) אחורי</label>
+    <label><input type="checkbox" class="checkbox" data-text="יישור דיסק עקום קדמי" data-sku="363"> יישור דיסק עקום קדמי</label>
+    <label><input type="checkbox" class="checkbox" data-text="יישור דיסק עקום אחורי" data-sku="364"> יישור דיסק עקום אחורי</label>
+	<h3 class="subcategory-title">רפידות</h3>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת רפידות דיסק קדמי" data-sku="353"> החלפת רפידות דיסק קדמי</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת רפידות דיסק אחורי" data-sku="354"> החלפת רפידות דיסק אחורי</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת רפידות ברקס חישוק" data-sku="355"> החלפת רפידות ברקס חישוק</label>
+	
+</div>
+
+<div class="category-box">
+    <h2 class="category-title"><img src="icons/shifting.png" alt="מערכת ההילוכים">מערכת ההילוכים</h2>
+    <h3 class="subcategory-title">DI2</h3>
+    <label><input type="checkbox" class="checkbox" data-text="התקנת DI2" data-sku="319"> התקנת DI2</label>
+    <label><input type="checkbox" class="checkbox" data-text="כיוון DI2" data-sku="320"> כיוון DI2</label>
+	<h3 class="subcategory-title">גלגלי שיניים ושרשרת</h3>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת שרשרת" data-sku="313"> החלפת שרשרת</label>
+    <label><input type="checkbox" class="checkbox" data-text="ניקוי ושימון שרשרת" data-sku="314"> ניקוי ושימון שרשרת</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת קסטה" data-sku="315"> החלפת קסטה</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת קראנק" data-sku="316"> החלפת קראנק</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת פלטות קראנק" data-sku="317"> החלפת פלטות קראנק</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת זרועות קראנק" data-sku="318"> החלפת זרועות קראנק</label>
+	<h3 class="subcategory-title">חיווט</h3>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת כבל הילוכים פנימי" data-sku="310"> החלפת כבל הילוכים פנימי</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת כבל הילוכים וחיפוי חיצוני" data-sku="311"> החלפת כבל הילוכים וחיפוי חיצוני</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת כבל הילוכים וחיפוי חיצוני (חשמלי)" data-sku="312"> החלפת כבל הילוכים וחיפוי חיצוני (חשמלי)</label>
+	    <h3 class="subcategory-title">מעביר אחורי</h3>
+    <label><input type="checkbox" class="checkbox" data-text="כיוון מעביר אחורי" data-sku="300"> כיוון מעביר אחורי</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת מעביר אחורי" data-sku="301"> החלפת מעביר אחורי</label>
+    <label><input type="checkbox" class="checkbox" data-text="יישור גשר מעביר הילוכים" data-sku="302"> יישור גשר מעביר הילוכים</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת גשר מעביר הילוכים" data-sku="303"> החלפת גשר מעביר הילוכים</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת גלגל שיניים במעביר אחורי" data-sku="304"> החלפת גלגל שיניים במעביר אחורי</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת מנגנון קלאץ' במעביר אחורי" data-sku="305"> החלפת מנגנון קלאץ' במעביר אחורי</label>
+	<h3 class="subcategory-title">מעביר קדמי</h3>
+    <label><input type="checkbox" class="checkbox" data-text="כיוון מעביר קדמי" data-sku="306"> כיוון מעביר קדמי</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת מעביר קדמי" data-sku="307"> החלפת מעביר קדמי</label>
+	<h3 class="subcategory-title">שיפטרים</h3>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת שיפטר ימני" data-sku="308"> החלפת שיפטר ימני</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת שיפטר שמאלי" data-sku="309"> החלפת שיפטר שמאלי</label>
+	
+	
+</div>
+
+<div class="category-box">
+    <h2 class="category-title"><img src="icons/frame.png" alt="שלדת האופניים ורכיבים נוספים">שלדת האופניים ורכיבים נוספים</h2>
+    <h3 class="subcategory-title">אוכף ומוט</h3>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת אוכף" data-sku="550"> החלפת אוכף</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת מוט כסא" data-sku="551"> החלפת מוט כסא</label>
+    <label><input type="checkbox" class="checkbox" data-text="בלידינג מוט כסא" data-sku="552"> בלידינג מוט כסא</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת כבל מוט כסא (פנימי)" data-sku="553"> החלפת כבל מוט כסא (פנימי)</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת כבל מוט כסא (פנימי וחיצוני)" data-sku="554"> החלפת כבל מוט כסא (פנימי וחיצוני)</label>
+    <label><input type="checkbox" class="checkbox" data-text="גירוז אוכף ומוט" data-sku="555"> גירוז אוכף ומוט</label>
+	<h3 class="subcategory-title">כידון</h3>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת סרט כידון" data-sku="600"> החלפת סרט כידון</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת סטם" data-sku="601"> החלפת סטם</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת כידון" data-sku="602"> החלפת כידון</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת גריפים" data-sku="603"> החלפת גריפים</label>
+	<h3 class="subcategory-title">פדלים</h3>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת פדלים" data-sku="650"> החלפת פדלים</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת מיסבים בפדלים" data-sku="651"> החלפת מיסבים בפדלים</label>
+    <label><input type="checkbox" class="checkbox" data-text="שחרור פדל תקוע" data-sku="652"> שחרור פדל תקוע</label>
+	<h3 class="subcategory-title">שלדה</h3>
+    <label><input type="checkbox" class="checkbox" data-text="בדיקה ויישור מתלה הגלגל האחורי" data-sku="500"> בדיקה ויישור מתלה הגלגל האחורי</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת או שיפוץ מיסבי סטם/הדסט" data-sku="501"> החלפת או שיפוץ מיסבי סטם/הדסט</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת מיסבי ציר מרכזי" data-sku="502"> החלפת מיסבי ציר מרכזי</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת מיסב שלדה (מתלה)" data-sku="503"> החלפת מיסב שלדה (מתלה)</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת מיסב שלדה (משולש אחורי)" data-sku="504"> החלפת מיסב שלדה (משולש אחורי)</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת מיסב הדסט" data-sku="505"> החלפת מיסב הדסט</label>
+    <label><input type="checkbox" class="checkbox" data-text="החלפת ציר מרכזי (Bottom Bracket)" data-sku="506"> החלפת ציר מרכזי (Bottom Bracket)</label>
+    <label><input type="checkbox" class="checkbox" data-text="שימון וניקוי ציר מרכזי" data-sku="507"> שימון וניקוי ציר מרכזי</label>
+    <label><input type="checkbox" class="checkbox" data-text="בדיקת תקינות שלדה" data-sku="508"> בדיקת תקינות שלדה</label>
+	
+</div>
+
+ </div>
+
+        <!-- Output Section (Sentences) -->
+        <div class="output-box">
+            <h3>📢 שירותים שנבחרו:</h3>
+            <div class="output" id="outputText">לא נבחרו שירותים</div>
+            <button class="copy-button" onclick="copyText('outputText')">📋 העתק הכל</button>
+        </div>
+
+        <!-- Output Section (SKU Codes) -->
+        <div class="output-box">
+            <h3>🔢 קודי SKU שנבחרו:</h3>
+            <div class="output" id="outputSku">לא נבחרו קודים</div>
+            <button class="copy-button" onclick="copyText('outputSku')">📋 העתק הכל</button>
+        </div>
+
+        <!-- Clear All Button -->
+        <button id="clearAllButton">🗑️ נקה הכל</button>
+    </div>
+</body>
+</html>
